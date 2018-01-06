@@ -6,7 +6,8 @@ import { app_routing } from './app.routes';
 
 //Servicios
 
-import {InformacionService} from "./services/informacion.service"
+import { InformacionService } from "./services/informacion.service";
+import { ProductosService } from './services/productos.service';
 //Compomentes
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -31,7 +32,8 @@ import { PortfolioItemComponent } from './components/portfolio-item/portfolio-it
     app_routing
   ],
   providers: [
-    InformacionService
+    InformacionService,
+    ProductosService
   ],
   bootstrap: [AppComponent]
 })

@@ -22,7 +22,7 @@ public carga_sobre_nosotros(){
     .subscribe(data =>{
       this.cargo = true;
       this.about = data.json();
-      console.log(data.json());
+      
     })
   }
 
