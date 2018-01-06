@@ -3,10 +3,13 @@ import {Http} from '@angular/http';
 
 @Injectable()
 export class ProductosService {
-productos:any[] =[];
-cargando:boolean =true;
+
+  productos:any [] =[];
+  cargando:boolean =true;
+
   constructor(private http:Http) {
     this.cargar_productos();
+
    }
   public cargar_productos(){
       this.cargando = true;
@@ -14,6 +17,7 @@ cargando:boolean =true;
           .subscribe(res =>{
             console.log(res.json());
             this.cargando = false;
+            this.productos = res.json();
           })
 
   }
