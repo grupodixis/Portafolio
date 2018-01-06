@@ -5,10 +5,10 @@ import {
   PortfolioItemComponent
 } from "./components/index.paginas";
 const app_routes: Routes = [
-  { path: '', component: PortafolioComponent},
+  { path: 'home', component: PortafolioComponent},
   { path: 'about', component: AboutComponent},
   { path: 'portfolio-item', component: PortfolioItemComponent},
-  { path: '**', pathMatch: 'full', redirectTo: '' }
+  { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 
 export const app_routing = RouterModule.forRoot(app_routes,{useHash:true});
