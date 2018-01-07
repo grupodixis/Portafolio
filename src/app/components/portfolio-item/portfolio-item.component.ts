@@ -8,10 +8,9 @@ import {ProductosService} from "../../services/productos.service";
 export class PortfolioItemComponent {
   producto:any=undefined;
   cod:string = undefined;
+
   constructor(private route:ActivatedRoute, private _ps:ProductosService){
     route.params.subscribe(parametros =>{
-      console.log(parametros);
-      console.log(parametros['id']);
       _ps.cargar_producto(parametros['id'])
         .subscribe(res =>{
           this.producto = res.json();

@@ -12,7 +12,6 @@ constructor(public _is:InformacionService,
 
 }
 buscar_producto( termino:string){
-  console.log(termino);
   this.router.navigate(['buscar', termino]);
 }
 }
