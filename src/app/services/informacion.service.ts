@@ -4,6 +4,7 @@ import { Http } from '@angular/http';
 export class InformacionService {
 
   info: any ={};
+  about: any ={};
   cargada:boolean = false;
   cargo:boolean = false;
   constructor(public http:Http) {
@@ -22,7 +23,7 @@ public carga_sobre_nosotros(){
     .subscribe(data =>{
       this.cargo = true;
       this.about = data.json();
-      
+
     })
   }
 

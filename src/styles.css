@@ -1,4 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+/*SvG animated*/
+svg path,
+svg rect{
+  fill: black;
+}
+
+
 /*Animaciones*/
 .animated {
   animation-duration: 0.8s;
